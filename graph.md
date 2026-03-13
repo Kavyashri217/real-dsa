@@ -2,12 +2,12 @@
 
 1. Define Graphs 
 
-  Graph is defined as G = (V, E)
-  V = Set of vertices or nodes.
-  E = Set of edges (connection between vertices or nodes). 
+    Graph is defined as G = (V, E)
+    V = Set of vertices or nodes.
+    E = Set of edges (connection between vertices or nodes). 
   
-  Edges represent relationship between vertices.
-  Graphs are fundamental because they model **relationships between entities** (networks, dependencies, routing, etc.), so the goal is to understand how they behave and how algorithms interact with them.
+    Edges represent relationship between vertices.
+    Graphs are fundamental because they model **relationships between entities** (networks, dependencies, routing, etc.), so the goal is to understand how they behave and how algorithms interact with them.
 
 2. What is the difference between these two?
     
@@ -47,8 +47,6 @@
     - **E undirected edges**
     
     In an **adjacency list**, how many total neighbor entries will exist?
-    
-    ![Screenshot 2026-03-11 195156.png](attachment:269ed81f-bb62-4f69-beb6-8a54df89a36b:Screenshot_2026-03-11_195156.png)
     
     2 * E
     
