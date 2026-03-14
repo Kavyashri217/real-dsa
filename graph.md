@@ -7,7 +7,8 @@
     E = Set of edges (connection between vertices or nodes). 
   
     Edges represent relationship between vertices.
-    Graphs are fundamental because they model **relationships between entities** (networks, dependencies, routing, etc.), so the goal is to understand how they behave and how algorithms interact with them.
+    Graphs are fundamental because they model **relationships between entities** (networks, dependencies, routing, etc.),
+    so the goal is to understand how they behave and how algorithms interact with them.
 
 ## 2. What is the difference between these two?
     
@@ -15,7 +16,8 @@
     
     **Directed edge:** A → B
     
-    Undirected edge does not have a specific direction, A-B can mean A to B or B to A, but in directed graph, it points towards a specific direction, A->B is A to B and not B to A, similarly, B->A is B to A and not A to B.
+    Undirected edge does not have a specific direction, A-B can mean A to B or B to A, but in directed graph, it points towards
+    a specific direction, A->B is A to B and not B to A, similarly, B->A is B to A and not A to B.
     
     **Undirected**
     
@@ -188,4 +190,6 @@ Do you know what **degree** means?
     
 If yes, explain it in your own words.
     
-    Degree of a vertex is how many edges it is connected to, in an undirected graph, but in directed graph it is further divided into two types inward degree and outward degree for edges pointing towards the         vertex and edges pointing away from vertex respectively.
+    Degree of a vertex is how many edges it is connected to in an undirected graph, but in directed graph it 
+    is further divided into two types inward degree and outward degree for edges pointing towards the vertex 
+    and edges pointing away from vertex respectively.
