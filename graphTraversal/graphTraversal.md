@@ -2,11 +2,11 @@
 
 ## 1. When exploring a graph from a starting node, there are two exploration styles:
     
-    A) Explore all immediate neighbors first, then move on to the neighbors of neighbors.
+A) Explore all immediate neighbors first, then move on to the neighbors of neighbors.
     
-    B) Follow one path as deep as possible, when you can’t go further, backtrack.
+B) Follow one path as deep as possible, when you can’t go further, backtrack.
     
-    Which of these corresponds to **BFS** and which corresponds to **DFS**?
+Which of these corresponds to **BFS** and which corresponds to **DFS**?
     
     A corresponds to BFS, and B corresponds to DFS. 
     
@@ -24,13 +24,13 @@
 
 ## 2. Each traversal naturally fits a certain data structure.
     
-    Which data structure do you think is used for:
+Which data structure do you think is used for:
     
-    **BFS → ?**
+**BFS → ?**
     
-    **DFS → ?**
+**DFS → ?**
     
-    And try to explain **why that structure fits the behavior**.
+Try to explain **why that structure fits the behavior**.
     
     When we implement traversal, we need some data structure to decide which node to visit next. 
     
@@ -79,11 +79,12 @@
 
 ## 3. When traversing graphs, we almost always maintain something like:
     
-    visited[node]
+visited[node]
     
-    Why do you think this is necessary?
+Why do you think this is necessary?
     
-    (The algorithm will not know which node to visit next if we don't maintain visited[node]?? → not quite right- The algorithm **will still know which node to visit next** because the **queue/stack already stores that**.)
+    (The algorithm will not know which node to visit next if we don't maintain visited[node]?? → not quite right- 
+    The algorithm **will still know which node to visit next** because the **queue/stack already stores that**.)
     
     The real problem
     
@@ -113,15 +114,13 @@
     O(V+E)
 
 ## 4. For the following graph 
-
-    
           1
          / \
         2   3
        / \
       4   5 
     
-    Starting from 1, what do you think the DFS traversal order would be if we always visit the smallest numbered neighbor first?
+Starting from 1, what do you think the DFS traversal order would be if we always visit the smallest numbered neighbor first?
     
     If you include backtracking steps: 1 -> 2 -> 4 -> 2 -> 5 -> 2 -> 1 -> 3
     
@@ -135,7 +134,9 @@
     4 -> [2]
     5 -> [2]
     
-    Start at 1 → visit 1 → go to smallest neighbor → 2, visit 2 → smallest neighbor → 1, but 1 is already visited, so skip → next 4 → visit 4 → 4 only connects to 2 → already visited → backtrack → back to 2 → next neighbor → 5 → visit 5 → backtrack to 2 → then back to 1 → next neighbor of 1 → 3 → visit 3. 
+    Start at 1 → visit 1 → go to smallest neighbor → 2, visit 2 → smallest neighbor → 1, but 1 is already visited, so skip → next 4 
+    → visit 4 → 4 only connects to 2 → already visited → backtrack → back to 2 → next neighbor → 5 → visit 5 → backtrack to 2 → then 
+    back to 1 → next neighbor of 1 → 3 → visit 3. 
     
     So, the visit order becomes 
     
@@ -143,9 +144,9 @@
 
 ## 5. Which traversal **guarantees the shortest path in an unweighted graph**?
     
-    A) BFS
+A) BFS
     
-    B) DFS
+B) DFS
     
     My answer: A) BFS because there is no backtracking.
     
