@@ -180,31 +180,30 @@ function main() {
     list.insert(5);
     
     console.log("Original list (forward):");
-    list.display(); // 1 <-> 2 <-> 3 <-> 4 <-> 5
+    list.display(); 
     
     console.log("Original list (backward):");
-    list.displayBackward(); // 5 <-> 4 <-> 3 <-> 2 <-> 1
+    list.displayBackward(); 
     
-    console.log("Length:", list.getLength()); // 5
+    console.log("Length:", list.getLength());
     
-    console.log("Search 3:", list.search(3)); // true
-    console.log("Search 10:", list.search(10)); // false
+    console.log("Search 3:", list.search(3)); 
+    console.log("Search 10:", list.search(10));
     
     list.insertAtBeginning(0);
     console.log("After inserting 0 at beginning:");
-    list.display(); // 0 <-> 1 <-> 2 <-> 3 <-> 4 <-> 5
+    list.display();
     
     list.insertAtPosition(2.5, 3);
     console.log("After inserting 2.5 at position 3:");
-    list.display(); // 0 <-> 1 <-> 2 <-> 2.5 <-> 3 <-> 4 <-> 5
+    list.display(); 
     
     list.delete(3);
     console.log("After deleting 3:");
-    list.display(); // 0 <-> 1 <-> 2 <-> 2.5 <-> 4 <-> 5
-    
+    list.display(); 
     list.reverse();
     console.log("After reversing:");
-    list.display(); // 5 <-> 4 <-> 2.5 <-> 2 <-> 1 <-> 0
+    list.display(); 
 }
 
 main();
