@@ -118,24 +118,24 @@ function main() {
     list.insert(7);
     
     console.log("Original list:");
-    list.display(); // 2 -> 5 -> 8 -> 7
+    list.display(); 
     
-    console.log("Length:", list.getLength()); // 4
+    console.log("Length:", list.getLength()); 
     
-    console.log("Search 5:", list.search(5)); // true
-    console.log("Search 10:", list.search(10)); // false
+    console.log("Search 5:", list.search(5)); 
+    console.log("Search 10:", list.search(10));
     
     list.insertAtBeginning(1);
     console.log("After inserting 1 at beginning:");
-    list.display(); // 1 -> 2 -> 5 -> 8 -> 7
+    list.display(); 
     
     list.delete(5);
     console.log("After deleting 5:");
-    list.display(); // 1 -> 2 -> 8 -> 7
+    list.display();
     
     list.reverse();
     console.log("After reversing:");
-    list.display(); // 7 -> 8 -> 2 -> 1
+    list.display(); 
 }
 
 main();
