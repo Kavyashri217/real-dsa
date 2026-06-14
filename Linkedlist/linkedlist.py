@@ -96,21 +96,21 @@ if __name__ == "__main__":
     list_obj.insert(5)
     
     print("Original list:")
-    list_obj.display()  # 2 -> 3 -> 4 -> 5
+    list_obj.display()  
     
-    print("Length:", list_obj.get_length())  # 4
+    print("Length:", list_obj.get_length())  
     
-    print("Search 3:", list_obj.search(3))  # True
-    print("Search 10:", list_obj.search(10))  # False
+    print("Search 3:", list_obj.search(3))  
+    print("Search 10:", list_obj.search(10))  
     
     list_obj.insert_at_beginning(1)
     print("After inserting 1 at beginning:")
-    list_obj.display()  # 1 -> 2 -> 3 -> 4 -> 5
+    list_obj.display()  
     
     list_obj.delete(3)
     print("After deleting 3:")
-    list_obj.display()  # 1 -> 2 -> 4 -> 5
+    list_obj.display()  
     
     list_obj.reverse()
     print("After reversing:")
-    list_obj.display()  # 5 -> 4 -> 2 -> 1
+    list_obj.display() 
