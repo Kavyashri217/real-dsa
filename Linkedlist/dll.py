@@ -148,28 +148,28 @@ if __name__ == "__main__":
     list_obj.insert(5)
     
     print("Original list (forward):")
-    list_obj.display()  # 1 <-> 2 <-> 3 <-> 4 <-> 5
+    list_obj.display()  
     
     print("Original list (backward):")
-    list_obj.display_backward()  # 5 <-> 4 <-> 3 <-> 2 <-> 1
+    list_obj.display_backward() 
     
-    print("Length:", list_obj.get_length())  # 5
+    print("Length:", list_obj.get_length()) 
     
-    print("Search 3:", list_obj.search(3))  # True
-    print("Search 10:", list_obj.search(10))  # False
+    print("Search 3:", list_obj.search(3)) 
+    print("Search 10:", list_obj.search(10))  
     
     list_obj.insert_at_beginning(0)
     print("After inserting 0 at beginning:")
-    list_obj.display()  # 0 <-> 1 <-> 2 <-> 3 <-> 4 <-> 5
+    list_obj.display()  
     
     list_obj.insert_at_position(2.5, 3)
     print("After inserting 2.5 at position 3:")
-    list_obj.display()  # 0 <-> 1 <-> 2 <-> 2.5 <-> 3 <-> 4 <-> 5
+    list_obj.display()  
     
     list_obj.delete(3)
     print("After deleting 3:")
-    list_obj.display()  # 0 <-> 1 <-> 2 <-> 2.5 <-> 4 <-> 5
+    list_obj.display()  
     
     list_obj.reverse()
     print("After reversing:")
-    list_obj.display()  # 5 <-> 4 <-> 2.5 <-> 2 <-> 1 <-> 0
+    list_obj.display()  
